@@ -89,9 +89,8 @@ x_test = []
 y_test = []
 
 for i in range(100, input_data.shape[0]):
-    while i>3 :
-        x_test.append(input_data[i-100: i])
-        y_test.append(input_data[i, 0])
+    x_test.append(input_data[i-100: i])
+    y_test.append(input_data[i, 0])
 
 
 x_test,y_test = np.array(x_test), np.array(y_test)
